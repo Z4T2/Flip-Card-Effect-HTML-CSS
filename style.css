@@ -1,0 +1,40 @@
+.card-container {
+    width: 225px;
+    height: 325px;
+}
+
+.card {
+    width: 225px;
+    height: 325px;
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
+    position: center;
+}
+
+.card-container:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card figure {
+    width: 225px;
+    height: 325px;
+    position: absolute;
+    margin: 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card .front {
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+.card .back {
+    background-color: purple;
+    color: white;
+    transform: rotateY(180deg);
+}
